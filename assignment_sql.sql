@@ -27,23 +27,25 @@ CREATE TABLE orders (
 
 INSERT INTO authors (author_id, author_name, country)
 VALUES
-    (1, 'F. Scott Fitzgerald', 'United States'),
-    (2, 'Harper Lee', 'United States'),
-    (3, 'George Orwell', 'United Kingdom');
+    (4, 'MT Vasudevan Nair', 'India'),
+    (5, 'Kamala Surayya', 'India'),
+    (6, 'Vaikom Muhammad Basheer', 'India');
 
 
-INSERT INTO books (book_id, title, author_id, price, publication_year)
+
+INSERT INTO books (book_id, title, author_id, price, publication_year, genre)
 VALUES
-    (1, 'The Great Gatsby', 1, 12.99, 1925),
-    (2, 'To Kill a Mockingbird', 2, 14.95, 1960),
-    (3, '1984', 3, 10.99, 1949);
+    (1, 'Naalukettu', 4, 15.99, 1958, 'Novel'),
+    (2, 'Randamoozham', 4, 18.99, 1984, 'Epic'),
+    (3, 'Chemmeen', 5, 12.50, 1956, 'Novel'),
+    (4, 'Pathummayude Aadu', 6, 10.99, 1959, 'Novel');
 
 
 INSERT INTO orders (order_id, book_id, customer_name, order_date)
 VALUES
-    (1, 1, 'John Doe', '2023-01-15'),
-    (2, 2, 'Jane Smith', '2023-02-02'),
-    (3, 3, 'Alice Johnson', '2023-03-10');
+    (1, 1, 'Anna', '2023-01-15'),
+    (2, 2, 'Neena', '2023-02-02'),
+    (3, 3, 'Mark', '2023-03-10');
 SELECT * FROM books;
 SELECT * FROM authors;
 SELECT * FROM orders;
